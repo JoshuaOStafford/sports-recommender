@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sports Recommender
 
-## Getting Started
+## Overview
 
-First, run the development server:
+In this YouTube Series, we will be building a Sports Recommendation web application with the help of Codeium Command using React, Next.js, Express, and the BallDontLie API.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Description
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The Application takes in a date input and viewing preferences (e.g. I like to watch NBA games when both teams are playoff contenders), and displays all matching events.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Series Outline
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We will be starting with NBA games, and hard coded filters. Throughout the series we will extend the project until it can handle multiple sports and allow users to create their own filters with the help of AI.
 
-## Learn More
+## Setup
 
-To learn more about Next.js, take a look at the following resources:
+### Step 1: Start Next.js Server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run `npm run dev` in `sports-recommender` to start the Next.js server.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Step 2: Install Dependencies
 
-## Deploy on Vercel
+Run `npm install express nodemon` in `sports-recommender/server` to install the required dependencies.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tutorial Episode
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This tutorial episode starts with a bootstrapped Next.js project and ends with an application that pulls all NBA games for an inputted date and optionally displays only matchups between two playoff teams from last year.
+
+## Steps
+
+1. Log all NBA games for the season opener, October 22nd, 2024, in the console.
+2. Create GameList & Game Components to display season opener games.
+3. Create DateSelector component and display games from other days.
+4. Create playoffTeams2023 filter and log filtered games to the console.
+5. Create Rules component for toggling Previous Year Playoff Teams Only filter.
+6. Refactor server to utilize rules query.
